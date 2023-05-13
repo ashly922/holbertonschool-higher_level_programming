@@ -1,0 +1,1 @@
+This directory contains practie tasks for python if else loops
