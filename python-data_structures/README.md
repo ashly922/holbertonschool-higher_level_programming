@@ -1,0 +1,1 @@
+This directory contains practice tasks regarding lists and data structures in python
