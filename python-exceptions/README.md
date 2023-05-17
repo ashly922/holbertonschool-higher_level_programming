@@ -1,0 +1,1 @@
+This directory cntains practice tasks regarding exceptions and safe use
