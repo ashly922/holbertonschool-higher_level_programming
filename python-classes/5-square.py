@@ -4,6 +4,7 @@ This module defines the Square class
 The Square class represents a square shape
 """
 
+
 class Square:
     """
     A class representing a square
@@ -16,7 +17,7 @@ class Square:
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -27,7 +28,7 @@ class Square:
 
     def area(self):
         return self.__size ** 2
-    
+
     def my_print(self):
         if self.__size == 0:
             print()
