@@ -1,33 +1,66 @@
-#!/usr/bin/python3
-import unittest
+# 0-add_integer.txt
+# Ashly Riggs <6133@holbertonschool.com>
 
-from your_module import add_integer
+=========================
+Usage of 0-add_integer.py
+=========================
 
-class AddIntegerTestCase(unittest.TestCase):
-    def test_add_integer(self):
-    '''
-    Test case 1: Positive integers
-    '''
-    result = add_integer(2, 3)
-    self.assertEqual(result, 5)
+This module defines an integer addition function ''add_integer(a, b=98)''
 
-    '''
-    Test case 2: Negative integers
-    '''
-    result = add_integer(-5, -7)
-    self.assertEqual(result, -12)
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(5, 10)
+    15
 
-    '''
-    Test case 3: Zero Values
-    '''
-    result = add_integer(0, 0)
-    self.assertEqual(result, 0)
+::
 
-    '''
-    Test case 4 Float inputs
-    '''
-    result = add_integer(2.5, 3.7)
-    self.assertEqual(result, 6)
+    >>> add_integer(5, 10.5)
+    15
 
-if __name__ == '__main__':
-    unittest.main()
+::
+
+    >>> add_integer(5, "10.5")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+::
+
+    >>> add_integer(5, "10.5")
+    Traceback (most recent call last)
+    TypeError: b must be an integer
+
+::
+
+    >>> add_integer(-10, 10)
+    0
+
+::
+
+    >>> add_integer(20, -10)
+    10
+
+::
+
+    >>> add_integer(10, 20, 30)
+    Traceback (most recent call last):
+    TypeError: add_integer() takes 1 to 2 positional arguments but 3 were given
+
+::
+
+    >>> add_integer(None, 10)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+::
+
+    >>> add_integer(10.9, 10.8)
+    20
+
+::
+
+    >>> add_integer(-10.9, -10.8)
+    -20
+
+::
+
+    >>> add_integer(2)
+    100
