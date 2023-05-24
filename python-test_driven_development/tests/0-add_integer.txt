@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+import unittest
+
+from your_module import add_integer
+
+class AddIntegerTestCase(unittest.TestCase):
+    def test_add_integer(self):
+    '''
+    Test case 1: Positive integers
+    '''
+    result = add_integer(2, 3)
+    self.assertEqual(result, 5)
+
+    '''
+    Test case 2: Negative integers
+    '''
+    result = add_integer(-5, -7)
+    self.assertEqual(result, -12)
+
+    '''
+    Test case 3: Zero Values
+    '''
+    result = add_integer(0, 0)
+    self.assertEqual(result, 0)
+
+    '''
+    Test case 4 Float inputs
+    '''
+    result = add_integer(2.5, 3.7)
+    self.assertEqual(result, 6)
+
+if __name__ == '__main__':
+    unittest.main()
