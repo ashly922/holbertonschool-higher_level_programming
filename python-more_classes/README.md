@@ -1,0 +1,1 @@
+This directory contains practice tasks for classes, more specifically defining and specifying a rectangle 
