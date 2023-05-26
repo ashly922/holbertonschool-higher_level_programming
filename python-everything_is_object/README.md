@@ -1,0 +1,1 @@
+This repository contains solutions to various tasks related to object-oriented programming in Python.
