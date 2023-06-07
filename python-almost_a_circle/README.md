@@ -1,0 +1,1 @@
+This program tasks us with creating classes with objects as well as creating the tests for them.
