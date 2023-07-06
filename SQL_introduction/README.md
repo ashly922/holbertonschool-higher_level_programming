@@ -1,0 +1,1 @@
+This repository are the first baby steps towrad completely understanding SQL
