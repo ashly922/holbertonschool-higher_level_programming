@@ -1,1 +1,1 @@
-This repository is a continuation of the practice for SQL solidification
+this directory contains practice for sql queries
