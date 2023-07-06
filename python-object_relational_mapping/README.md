@@ -1,0 +1,1 @@
+This repository contains practice for object relational mapping in python
